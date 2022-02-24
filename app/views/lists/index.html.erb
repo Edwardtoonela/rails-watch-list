@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row text-center mt-3">
+    <div class="col-12">
+      <h1>List of movies</h1>
+    </div>
+  </div>
+  <div class="d-flex justify-content-center my-3 text-center" >
+    <ul class="list-group list-group-flush"">
+      <% @lists.each do |list| %>
+        <li class="list-group-item"><%= link_to list.name, list_path(list) %></li>
+      <% end %>
+      <li class="list-group-item">An item</li>
+      <li class="list-group-item">A second item</li>
+    </ul>
+  </div>
+</div>
