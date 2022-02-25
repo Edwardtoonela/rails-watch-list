@@ -4,16 +4,10 @@ Rails.application.routes.draw do
     collection do
       get :top
     end
-  end
-
-  resources :lists do
     member do
       get :bookmarks
       get :movies
     end
-  end
-
-  resources :lists do
     resources :bookmarks, only: [:new, :create]
   end
 
