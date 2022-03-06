@@ -1,4 +1,5 @@
 class BookmarksController < ApplicationController
+  skip_before_action :authenticate_user!, only: :home
 
   def new
     @list = List.find(params[:list_id])
