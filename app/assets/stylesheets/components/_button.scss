@@ -1,0 +1,23 @@
+
+
+.button--pan {
+  font-family: aktiv-grotesk-extended, sans-serif;
+  font-weight: 700;
+  border: 2px solid #000;
+  border-radius: 3rem;
+  overflow: hidden;
+  color: black;
+}
+
+.button {
+  pointer-events: auto;
+  cursor: pointer;
+  background: white;
+  border: none;
+  padding: 1.5rem 3rem;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  position: relative;
+  display: inline-block;
+}
